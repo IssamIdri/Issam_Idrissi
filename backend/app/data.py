@@ -223,8 +223,7 @@ PROJECTS: list[dict[str, Any]] = [
             "permettant d’interroger mon profil, mes compétences et mes projets."
         ),
         "technologies": ["React", "TypeScript", "FastAPI", "Tailwind CSS", "API REST"],
-        # TODO : vérifier l’URL une fois le dépôt publié
-        "github_url": "https://github.com/IssamIdri/portfolio-issam-ai",
+        "github_url": "https://github.com/IssamIdri/Issam_Idrissi",
         "demo_url": None,
     },
 ]

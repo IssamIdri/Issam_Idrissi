@@ -162,7 +162,7 @@ git init
 git add .
 git commit -m "Initial commit: portfolio full-stack IA"
 git branch -M main
-git remote add origin https://github.com/IssamIdri/portfolio-issam-ai.git
+git remote add origin https://github.com/IssamIdri/Issam_Idrissi.git
 git push -u origin main
 ```
 
