@@ -12,9 +12,9 @@ services:
       - key: PYTHON_VERSION
         value: 3.12.7
       - key: ALLOWED_ORIGINS
-        value: https://portfolio-issam-ai.vercel.app
+        value: https://issam-idrissi.vercel.app
       - key: ALLOWED_ORIGIN_REGEX
-        value: https://portfolio-issam-ai(-[a-z0-9-]+)?\.vercel\.app
+        value: https://issam-idrissi(-[a-z0-9-]+)?\.vercel\.app
       - key: ASSISTANT_PROVIDER
         value: rules
       - key: CONTACT_PROVIDER
