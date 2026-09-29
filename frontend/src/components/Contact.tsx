@@ -63,9 +63,9 @@ export default function Contact({ profile }: { profile: Profile | null }) {
           description="Vous recrutez un Développeur IA ou Backend Python ? Écrivez-moi, je réponds rapidement."
         />
 
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr]">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.5fr]">
           {profile && (
-            <Reveal className="space-y-4">
+            <Reveal className="min-w-0 space-y-4">
               <ContactItem icon={<Mail className="h-5 w-5" />} label="Email" value={profile.email} href={`mailto:${profile.email}`} />
               <ContactItem
                 icon={<Linkedin className="h-5 w-5" />}
@@ -82,7 +82,7 @@ export default function Contact({ profile }: { profile: Profile | null }) {
             </Reveal>
           )}
 
-          <Reveal delay={150} className={profile ? '' : 'lg:col-span-2'}>
+          <Reveal delay={150} className={profile ? 'min-w-0' : 'min-w-0 lg:col-span-2'}>
             <form
               onSubmit={handleSubmit}
               noValidate

@@ -57,8 +57,8 @@ export default function Navbar() {
             : 'border-white/5 bg-night-900/30 backdrop-blur-md'
         }`}
       >
-        <a href="#top" onClick={close} className="group flex items-center gap-3">
-          <span className="relative">
+        <a href="#top" onClick={close} className="group flex min-w-0 items-center gap-3">
+          <span className="relative shrink-0">
             <img
               src={avatar}
               alt="Photo d’Issam Aissaoui Idrissi"
@@ -71,9 +71,9 @@ export default function Navbar() {
               aria-hidden
             />
           </span>
-          <span className="leading-tight">
-            <span className="block text-sm font-semibold text-white">Issam Idrissi</span>
-            <span className="block text-xs text-slate-400">Développeur IA · Backend Python</span>
+          <span className="min-w-0 leading-tight">
+            <span className="block truncate text-sm font-semibold text-white">Issam Idrissi</span>
+            <span className="block truncate text-xs text-slate-400">Développeur IA · Backend Python</span>
           </span>
         </a>
 
@@ -95,7 +95,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <a
             href="#contact"
             className="hidden items-center gap-1.5 rounded-xl bg-linear-to-r from-blue-600 to-violet-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-600/25 transition hover:brightness-110 sm:inline-flex"

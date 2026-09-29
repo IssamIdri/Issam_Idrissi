@@ -17,7 +17,7 @@ export default function About({ profile }: { profile: Profile | null }) {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeader eyebrow="À propos" title="Un profil backend orienté IA" />
 
-        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.4fr_1fr]">
           <Reveal>
             <p className="text-lg leading-relaxed text-slate-700">{profile.about}</p>
 
