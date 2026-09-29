@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: portfolio-issam-ai-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: ALLOWED_ORIGINS
+        value: https://portfolio-issam-ai.vercel.app
+      - key: ALLOWED_ORIGIN_REGEX
+        value: https://portfolio-issam-ai(-[a-z0-9-]+)?\.vercel\.app
+      - key: ASSISTANT_PROVIDER
+        value: rules
+      - key: CONTACT_PROVIDER
+        value: log
+      - key: LOG_LEVEL
+        value: INFO
